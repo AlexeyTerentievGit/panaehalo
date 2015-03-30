@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Кемпинг – мотель «Панаехало!» - это креативный и комфортный маленький отель со своим неповторимым стилем во всем!">
-    <meta name="Keywords" content="Крым, Севастополь, море, отель, гостиница, отдых, шашлык, гамак, бассейн, теннис">
+    <meta name="Keywords" content="Крым, Севастополь, Казачья, бухта, море, пляж, отель, гостиница, жилье, номер, квартира, отдых, посуточно, бассейн">
     <title>Панаехало | Кемпинг-мотель в Севастополе</title>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -35,16 +35,22 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <!--<a class="navbar-brand bg-primary" href="#about">JOKER</a>-->
+                    <div class="number-header"> <span class="fa fa-phone" ></span> +7 (978) 769-31-42</div>
                 </div>
                 <div class="collapse navbar-collapse" id="NavCol">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="current"><a href="#about" class="linear">Главная</a></li>
                         <li><a href="#aboutMore" class="linear">Об отеле</a></li>
-                        <li><a href="#work" class="linear">Номера</a></li>
-                        <li><a href="#" class="linear">Услуги</a></li>
-                        <li><a href="#" class="linear">Кухня / Бар</a></li>
-                        <li><a href="#" class="linear">Акции</a></li>
+                        <li class="dropdown"><a href="#" data-toggle="dropdown" class="linear">Номера<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#room-standard">Стандарт</a></li>
+                                <li><a href="#room-comfort">Комфорт</a></li>
+                                <li><a href="#room-house">Дом</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#services" class="linear">Услуги</a></li>
+                        <li><a href="#bar" class="linear">Бар</a></li>
+                        <li><a href="#extra" class="linear">Новости и Акции</a></li>
                         <li><a href="#contact" class="linear">Контакты</a></li>
                     </ul>
                 </div>
@@ -53,9 +59,13 @@
     </div>
     <!-- /Navigation menu -->
 
+    <!-- Tower -->
+    <a href="#extra"><img class="tower-img" src="img/tower-mini.png"></a>
+    <!-- /Tower -->
+
     <!-- Full Page Image Header Area -->
-    <div style="background-color: #000000">
-        <div id="about" class="header">
+    <div style="background-color: #000000;">
+        <div id="about" class="header" style="height:700px;">
 	        <div class="maskHeader"></div>
         </div>
     </div>
@@ -64,15 +74,12 @@
     <!-- Main caption -->
     <div class="main-caption">
         <div class="logo">
-            <img src="img/palms2.png" alt="logo" />
-        </div>
-        <div id="flex-head" class="flexslider">
-            <ul class="slides">
-                <li>
-                    <h2>кемпинг-мотель</h2>
-                    <h1>Панаехало</h1>
-                </li>
-            </ul>
+            <img src="img/palms.png" alt="palms" style="padding-right: 20px;"/>
+            <div class="main-title">
+                <h2>кемпинг-мотель</h2>
+                <h1>Панаехало</h1>
+            </div>
+            <img src="img/stars.png" style="margin-right:10px" alt="stars"/>
         </div>
     </div>
     <!-- /Main caption -->
@@ -88,62 +95,47 @@
                     </div>
                 </div><!-- end col -->
             </div><!-- end row -->
-            <div class="row" style="margin-top: 15px; margin-bottom: 0;">
-                <div class="col-md-12">
+            <div class="row" style="margin-top: 15px;">
+                <div class="col-md-2">
+                    <div class="thumbnail"><div class="thumb-img"><a href="img/certificate.jpg" data-gallery="certificate" data-parent="" data-toggle="lightbox" data-title=""><img src="img/certificate.jpg"></a></div></div>
+                </div>
+                <div class="col-md-10">
                     <div class="about-content">
-                        <p>Кемпинг–мотель <strong>«Панаехало!»</strong> - это креативный и комфортный маленький отель со своим неповторимым стилем во всем! Если Вы любите отдых на природе с большим комфортом, чаепитиями на веранде, валянием в гамаке, купанием в бассейне, шашлыками и отличным сервисом – обязательно посетите нас!</p>
+                        <p><strong>Кемпинг–мотель «Панаехало!»</strong> - это креативный и комфортный маленький отель со своим неповторимым стилем во всем! Если Вы любите отдых на природе с большим комфортом, чаепитиями на веранде, валянием в гамаке, купанием в бассейне, шашлыками и отличным сервисом – обязательно посетите нас!</p>
+                        <p>Общественной организацией "Объединение граждан по защите прав потребителей" 19 января 2015 года проведено обследование по международной системе распределенной звездности и выдано Свидетельство о присвоении нашему отелю категории три звезды. </p>
+                        <p>В нашем маленьком отеле всего 5 отдельных кемпинг-бунгало, поэтому есть возможность и желание уделить максимальное количество приятного внимания каждому гостю! </p>
                     </div>
                 </div><!-- end col -->
             </div><!-- end row -->
             <div class="row">
                 <div class="col-md-6" style="margin-top: -15px;">
                     <div class="build main-about">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="about-content">
-                                    <p><strong>Идея создания</strong> кемпинг-мотеля возникла, как желание объединить довольно широкий спектр условий, необходимых современному городскому человеку на отдыхе. В результате у нас получилось нечто среднее между съемным отдельным домиком, оснащенным всем необходимым для самостоятельного проживания и современным отелем, предлагающим полный комплекс услуг. Нам удалось удачно сочетать такие <strong>факторы</strong>, как:</p>
-                                </div>
-                            </div>
+                        <div class="about-content">
+                            <p><strong>Идея создания</strong> кемпинг-мотеля возникла, как желание объединить довольно широкий спектр условий, необходимых современному городскому человеку на отдыхе. В результате у нас получилось нечто среднее между комплексом дачных домиков, оснащенных всем необходимым для самостоятельного проживания и современным отелем, предлагающим полный спектр услуг. Нам удалось удачно сочетать такие факторы, как:</p>
                         </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="about-content">
-                                    <ul style = "display: list-item">
-                                        <li>Близость к природе с «полным пакетом» современных бытовых удобств.</li>
-                                        <li>Изолированные кемпинги с верандами и отдельным входом для каждой семьи с обустроенной инфраструктурой для активного отдыха и общения с другими отдыхающими.</li>
-                                        <li>Мини-кухня для самостоятельного питания в каждом кемпинге и стильный бар, предлагающий выбор продуктов и напитков, а также изысканные ужины при свечах и возможность проведения вечернего отдыха с музыкой, караоке, активным общением.</li>
-                                        <li>Индивидуальный подход к каждому гостю.</li>
-                                        <li>Качественная еда и напитки.</li>
-                                        <li>Максимально комфортная психологическая атмосфера.</li>
-                                        <li>Новые «фишки», акции, сюрпризы каждый сезон.</li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <div class="about-content">
+                            <ul style = "display: list-item">
+                                <li>Близость к природе с «полным пакетом» современных бытовых удобств.</li>
+                                <li>Изолированные кемпинги с верандами и отдельным входом для каждой семьи с обустроенной инфраструктурой для активного отдыха и общения с другими отдыхающими.</li>
+                                <li>Мини-кухня для самостоятельного питания в каждом кемпинге и стильный бар, предлагающий выбор продуктов и напитков, а также изысканные ужины при свечах и возможность проведения вечернего отдыха с музыкой, караоке, активным общением.</li>
+                                <li>Индивидуальный подход к каждому гостю.</li>
+                                <li>Качественная еда и напитки.</li>
+                                <li>Максимально комфортная психологическая атмосфера.</li>
+                                <li>Новые «фишки», акции, сюрпризы каждый сезон.</li>
+                            </ul>
                         </div>
                     </div>
                 </div><!-- end col -->
                 <div class="col-md-6" style="margin-top: -15px;">
                     <div class="build main-about">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="about-content">
-                                    <p><strong>Отель задуман</strong> и создан по индивидуальному проекту с большой любовью к каждому предмету интерьера, каждому цветку и дереву на всей территории. Здесь нет ни одной случайной вещи, все подбиралось, строилось, сажалось и оформлялось для создания максимального уюта, комфорта и собственного неповторимого стиля.</p>
-                                </div>
-                            </div>
+                        <div class="about-content">
+                            <p><strong>Отель задуман</strong> и создан по индивидуальному проекту с большой любовью к каждому предмету интерьера, каждому цветку и дереву на всей территории. Здесь нет ни одной случайной вещи, все подбиралось, строилось, сажалось и оформлялось для создания максимального уюта, комфорта и собственного неповторимого стиля.</p>
                         </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="about-content">
-                                    <p><strong>Название «Панаехало!»</strong> родилось вроде бы в шутку еще на этапе строительства, когда на территорию будущего отеля своим ходом прибывали  автокемпинги из Англии, Германии и Финляндии.  Но когда стал вопрос о выборе постоянного серьезного названия, оказалось, что ничего более подходящего для нашего маленького «атмосферного» отеля подобрать просто невозможно!  Так и прижилось наше «Панаехало!», как веселое и легко запоминающееся.</p>
-                                </div>
-                            </div>
+                        <div class="about-content">
+                            <p><strong>Название «Панаехало!»</strong> родилось вроде бы в шутку еще на этапе строительства, когда на территорию будущего отеля своим ходом прибывали  автокемпинги из Англии, Германии и Финляндии.  Но когда стал вопрос о выборе постоянного серьезного названия, оказалось, что ничего более подходящего для нашего маленького «атмосферного» отеля подобрать просто невозможно!  Так и прижилось наше «Панаехало!», как веселое и легко запоминающееся.</p>
                         </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="about-content">
-                                    <p><strong>Мотель расположен</strong> в черте города Севастополя в бухте Казачья. Ближайший пляж находится на расстоянии – 300м от отеля (5-7 минут пешей прогулки). Море открытое, очень чистое. Берег каменистый. Остановка общественного транспорта – 300 метров от отеля. На остановке находятся два продуктовых магазина. Время поездки на маршрутном автобусе до центра города – 40 минут. Авто и ж/д вокзал – 40 минут. До аэропорта в городе Симферополе - 1,5 часа на автомобиле. В шаговой доступности также пляж «Голубая бухта», музей 35 батарея, дельфинарий, бар на берегу моря.</p>
-                                </div>
-                            </div>
+                        <div class="about-content">
+                            <p><strong>Мотель расположен</strong> в черте города Севастополя в бухте Казачья. Ближайший пляж находится на расстоянии – 300м от отеля (5-7 минут пешей прогулки). Море открытое, очень чистое. Берег каменистый. Остановка общественного транспорта – 300 метров от отеля. На остановке находятся два продуктовых магазина. Время поездки на маршрутном автобусе до центра города – 40 минут. Авто и ж/д вокзал – 40 минут. До аэропорта в городе Симферополе - 1,5 часа на автомобиле. В шаговой доступности также пляж «Голубая бухта», музей 35 батарея, дельфинарий, бар на берегу моря.</p>
                         </div>
                     </div>
                 </div><!-- end col -->
@@ -152,9 +144,10 @@
     </div>
     <!-- /About -->
 
-    <!-- Portfolio -->
-    <div id="work" class="page clearfix">
+    <!-- Room standard -->
+    <div id="room-standard" class="page clearfix">
         <div class="container">
+
             <div class="row">
                 <div class="col-md-10  col-md-offset-1">
                     <div class="build title-page">
@@ -163,29 +156,321 @@
                     </div>
                 </div><!-- end col -->
             </div><!-- end row -->
-            <div class="col-md-12">
-                <div class="folio-content clearfix">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4 col-md-6 box"> <div class="thumbnail"><div class="thumb-img"><a href="img/photo/rooms/standard/1.jpg" data-gallery="rooms-standard" data-parent="" data-toggle="lightbox" data-title="Кемпинг-стандарт"><img src="img/photo/rooms/standard/1.jpg"></a></div></div></div>
-                        <a href="img/photo/rooms/standard/2.jpg" data-gallery="rooms-standard" data-parent="" data-toggle="lightbox" data-title="Кемпинг-стандарт" style="display:none"><img src="img/photo/rooms/standard/2.jpg"></a>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4 col-md-6 box"> <div class="thumbnail"><div class="thumb-img"><a href="img/photo/rooms/comfort/1.jpg" data-gallery="rooms-comfort" data-parent="" data-toggle="lightbox" data-title="Кемпинг-комфорт"><img src="img/photo/rooms/comfort/1.jpg"></a></div></div></div>
-                        <a href="img/photo/rooms/comfort/2.jpg" data-gallery="rooms-comfort" data-parent="" data-toggle="lightbox" data-title="Кемпинг-комфорт" style="display:none"><img src="img/photo/rooms/comfort/2.jpg"></a>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4 col-md-6 box"> <div class="thumbnail"><div class="thumb-img"><a href="img/photo/rooms/house/1.jpg" data-gallery="rooms-house" data-parent="" data-toggle="lightbox" data-title="Кемпинг-дом"><img src="img/photo/rooms/house/1.jpg"></a></div></div></div>
-                        <a href="img/photo/rooms/house/2.jpg" data-gallery="rooms-house" data-parent="" data-toggle="lightbox" data-title="Кемпинг-дом" style="display:none"><img src="img/photo/rooms/house/2.jpg"></a>
-                    </div>
-                </div><!-- end folio content -->
-            </div><!-- end col -->
-        </div><!--end container-->
+
+            <div class="row" style="margin-top: 20px">
+                <div class="col-xs-12 col-sm-4 col-md-6 box" style="margin-top: 5px">
+                    <div id="room1mtitle"></div>
+
+                    <div class="thumbnail"><div class="thumb-img"><a href="img/photo/rooms/standard/1.jpg" data-gallery="rooms-standard" data-parent="" data-toggle="lightbox" data-title="Кемпинг-стандарт [1/12]"><img src="img/photo/rooms/standard/1.jpg"></a></div></div>
+                    <a href="img/photo/rooms/standard/2.jpg" data-gallery="rooms-standard" data-parent="" data-toggle="lightbox" data-title="Кемпинг-стандарт [2/12]" style="display:none"><img src="img/photo/rooms/standard/2.jpg"></a>
+                    <a href="img/photo/rooms/standard/3.jpg" data-gallery="rooms-standard" data-parent="" data-toggle="lightbox" data-title="Кемпинг-стандарт [3/12]" style="display:none"><img src="img/photo/rooms/standard/3.jpg"></a>
+                    <a href="img/photo/rooms/standard/4.jpg" data-gallery="rooms-standard" data-parent="" data-toggle="lightbox" data-title="Кемпинг-стандарт [4/12]" style="display:none"><img src="img/photo/rooms/standard/4.jpg"></a>
+                    <a href="img/photo/rooms/standard/5.jpg" data-gallery="rooms-standard" data-parent="" data-toggle="lightbox" data-title="Кемпинг-стандарт [5/12]" style="display:none"><img src="img/photo/rooms/standard/5.jpg"></a>
+                    <a href="img/photo/rooms/standard/6.jpg" data-gallery="rooms-standard" data-parent="" data-toggle="lightbox" data-title="Кемпинг-стандарт [6/12]" style="display:none"><img src="img/photo/rooms/standard/6.jpg"></a>
+                    <a href="img/photo/rooms/standard/7.jpg" data-gallery="rooms-standard" data-parent="" data-toggle="lightbox" data-title="Кемпинг-стандарт [7/12]" style="display:none"><img src="img/photo/rooms/standard/7.jpg"></a>
+                    <a href="img/photo/rooms/standard/8.jpg" data-gallery="rooms-standard" data-parent="" data-toggle="lightbox" data-title="Кемпинг-стандарт [8/12]" style="display:none"><img src="img/photo/rooms/standard/8.jpg"></a>
+                    <a href="img/photo/rooms/standard/9.jpg" data-gallery="rooms-standard" data-parent="" data-toggle="lightbox" data-title="Кемпинг-стандарт [9/12]" style="display:none"><img src="img/photo/rooms/standard/9.jpg"></a>
+                    <a href="img/photo/rooms/standard/10.jpg" data-gallery="rooms-standard" data-parent="" data-toggle="lightbox" data-title="Кемпинг-стандарт [10/12]" style="display:none"><img src="img/photo/rooms/standard/10.jpg"></a>
+                    <a href="img/photo/rooms/standard/11.jpg" data-gallery="rooms-standard" data-parent="" data-toggle="lightbox" data-title="Кемпинг-стандарт [11/12]" style="display:none"><img src="img/photo/rooms/standard/11.jpg"></a>
+                    <a href="img/photo/rooms/standard/12.jpg" data-gallery="rooms-standard" data-parent="" data-toggle="lightbox" data-title="Кемпинг-стандарт [12/12]" style="display:none"><img src="img/photo/rooms/standard/12.jpg"></a>
+
+                    <table border="1" style="text-align: center; width: 100%; border-color: rgba(179, 153, 122, 0.31); margin-bottom: 20px;">
+                        <thead style="background-color: rgba(242, 211, 137, 0.54);"> <tr> <td colspan="4" style="text-align: center"> <strong>Стоимость</strong> </td> </tr> </thead>
+                        <tbody style="background-color: rgba(222, 222, 222, 0.19);">
+                            <tr> <td> 1 - 10 мая </td> <td> 11 мая - 14 июня </td> <td> 15 июня - 31 августа </td> <td> сентябрь </td> </tr>
+                            <tr> <td> 3000 рублей </td> <td> 2000 рублей </td> <td> 2500 рублей </td> <td> 2000 рублей </td> </tr>
+                            <tr> <td colspan="4"> В стоимость входит завтрак для 2х человек, пользование всеми услугами отеля, Wi-Fi, тапочки для моря, уборка номера 1 раз в 3 дня. </td> </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-6 box">
+                    <div id="room1title"><h1> Кемпинг-стандарт </h1> (3 номера) <br> <br></div>
+                    Каждый номер вмещает до 4х человек и включает:
+                    <br> <br> <strong> Автодом (2м x 6м) </strong>
+                        <br> Мини-кухня с мойкой, разделочным столиком, плитой, электрочайником и посудой, туалетная комната с мойкой и полочками для косметики и парфюмерии, кондиционер, шкаф для одежды, сейф, халаты, белье, полотенца.
+                        <br> <br> Одна двуспальная кровать (1.4м x 2м) и, в зависимости от номера:
+                        <ul>
+                            <li> еще одна двуспальная кровать (2м x 2м) с возможностью трансформации в мягкий уголок с кофейным столиком
+                            <li> или две односпальные кровати
+                            <li> или двухъярусная кровать (0.8м x 1.8м) для детей
+                        </ul>
+                    <br> <strong> Деревянная веранда (2.5м x 4м) </strong>
+                        <br> Обеденный стол, скамья с мягким матрасом и подушками, стулья, холодильник, телевизор, гамак, шезлонг с мягким матрасом, сушилка для белья.
+                    <br> <br> <strong> Душ / туалет </strong>
+                        <br> Круглосуточная горячая вода, полотенца, фен, сменные наборы <br> (мыло/шампунь/гель для душа).
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- /Portfolio -->
-    
-    <!--Contact-->
-    <div id="contact" class="page page-bgcolor">
+    <!-- /Room standard -->
+
+    <!-- Room comfort -->
+    <div id="room-comfort" class="page clearfix">
         <div class="container">
+            <div class="row" style="margin-top: 30px">
+                <div class="col-xs-12 col-sm-4 col-md-6 box" style="margin-top: 5px">
+                    <div id="room2mtitle"></div>
+
+                    <div class="thumbnail"><div class="thumb-img"><a href="img/photo/rooms/comfort/1.jpg" data-gallery="rooms-comfort" data-parent="" data-toggle="lightbox" data-title="Кемпинг-комфорт [1/6]"><img src="img/photo/rooms/comfort/1.jpg"></a></div></div>
+                    <a href="img/photo/rooms/comfort/2.jpg" data-gallery="rooms-comfort" data-parent="" data-toggle="lightbox" data-title="Кемпинг-комфорт [2/6]" style="display:none"><img src="img/photo/rooms/comfort/2.jpg"></a>
+                    <a href="img/photo/rooms/comfort/3.jpg" data-gallery="rooms-comfort" data-parent="" data-toggle="lightbox" data-title="Кемпинг-комфорт [3/6]" style="display:none"><img src="img/photo/rooms/comfort/3.jpg"></a>
+                    <a href="img/photo/rooms/comfort/4.jpg" data-gallery="rooms-comfort" data-parent="" data-toggle="lightbox" data-title="Кемпинг-комфорт [4/6]" style="display:none"><img src="img/photo/rooms/comfort/4.jpg"></a>
+                    <a href="img/photo/rooms/comfort/5.jpg" data-gallery="rooms-comfort" data-parent="" data-toggle="lightbox" data-title="Кемпинг-комфорт [5/6]" style="display:none"><img src="img/photo/rooms/comfort/5.jpg"></a>
+                    <a href="img/photo/rooms/comfort/6.jpg" data-gallery="rooms-comfort" data-parent="" data-toggle="lightbox" data-title="Кемпинг-комфорт [6/6]" style="display:none"><img src="img/photo/rooms/comfort/6.jpg"></a>
+
+                    <table border="1" style="text-align: center; width: 100%; border-color: rgba(179, 153, 122, 0.31); margin-bottom: 20px;">
+                        <thead style="background-color: rgba(242, 211, 137, 0.54);"> <tr> <td colspan="4" style="text-align: center"> <strong>Стоимость</strong> </td> </tr> </thead>
+                        <tbody style="background-color: rgba(222, 222, 222, 0.19);">
+                            <tr> <td> 1 - 10 мая </td> <td> 11 мая - 14 июня </td> <td> 15 июня - 31 августа </td> <td> сентябрь </td> </tr>
+                            <tr> <td> 3000 рублей </td> <td> 2300 рублей </td> <td> 2800 рублей </td> <td> 2300 рублей </td> </tr>
+                            <tr> <td colspan="4"> В стоимость входит завтрак для 2х человек, пользование всеми услугами отеля, Wi-Fi, тапочки для моря, уборка номера 1 раз в 3 дня. </td> </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-6 box">
+                    <div id="room2title"> <h1> Кемпинг-комфорт </h1> (1 номер) <br> <br> </div>
+                    Номер вмещает до 4х человек и включает:
+                    <br> <br> <strong> Автодом (2м x 6.5м) </strong>
+                    <br> Мини-кухня с холодильником, разделочным столиком, плитой, электрочайником и посудой, туалетная комната с мойкой и полочками для косметики и парфюмерии, тёплый пол, кондиционер, шкаф для одежды, сейф, халаты, белье, полотенца.
+                    <br> <br> Одна двуспальная кровать (2м x 2м) и одна двуспальная кровать (1.4x2м) с возможностью трансформации в мягкий уголок с кофейным столиком.
+                    <br> <br> <strong> Деревянная веранда (2.5м x 4м) </strong>
+                    <br> Стол кофейный ротанговый, скамья с мягким матрасом и подушками, кресла ротанговые с мягкими подушками, диванчик ротанговый с мягкими подушками, телевизор, гамак, шезлонг с мягким матрасом, сушилка для белья.
+                    <br> <br> <strong> Душ / туалет </strong>
+                    <br> Круглосуточная горячая вода, стиральная машина, полотенца, фен, сменные наборы (мыло/шампунь/гель для душа).
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Room comfort -->
+
+    <!-- Room house -->
+    <div id="room-house" class="page clearfix">
+        <div class="container">
+            <div class="row" style="margin-top: 30px">
+                <div class="col-xs-12 col-sm-4 col-md-6 box" style="margin-top: 5px">
+                    <div id="room3mtitle"></div>
+
+                    <div class="thumbnail"><div class="thumb-img"><a href="img/photo/rooms/house/1.jpg" data-gallery="rooms-house" data-parent="" data-toggle="lightbox" data-title="Кемпинг-дом [1/5]"><img src="img/photo/rooms/house/1.jpg"></a></div></div>
+                    <a href="img/photo/rooms/house/2.jpg" data-gallery="rooms-house" data-parent="" data-toggle="lightbox" data-title="Кемпинг-дом [2/5]" style="display:none"><img src="img/photo/rooms/house/2.jpg"></a>
+                    <a href="img/photo/rooms/house/3.jpg" data-gallery="rooms-house" data-parent="" data-toggle="lightbox" data-title="Кемпинг-дом [3/5]" style="display:none"><img src="img/photo/rooms/house/3.jpg"></a>
+                    <a href="img/photo/rooms/house/4.jpg" data-gallery="rooms-house" data-parent="" data-toggle="lightbox" data-title="Кемпинг-дом [4/5]" style="display:none"><img src="img/photo/rooms/house/4.jpg"></a>
+                    <a href="img/photo/rooms/house/5.jpg" data-gallery="rooms-house" data-parent="" data-toggle="lightbox" data-title="Кемпинг-дом [5/5]" style="display:none"><img src="img/photo/rooms/house/5.jpg"></a>
+
+                    <table border="1" style="text-align: center; width: 100%; border-color: rgba(179, 153, 122, 0.31); margin-bottom: 20px;">
+                        <thead style="background-color: rgba(242, 211, 137, 0.54);"> <tr> <td colspan="4" style="text-align: center"> <strong>Стоимость</strong> </td> </tr> </thead>
+                        <tbody style="background-color: rgba(222, 222, 222, 0.19);">
+                        <tr> <td> 1 - 10 мая </td> <td> 11 мая - 14 июня </td> <td> 15 июня - 31 августа </td> <td> сентябрь </td> </tr>
+                        <tr> <td> 6000 рублей </td> <td> 4500 рублей </td> <td> 5500 рублей </td> <td> 4500 рублей </td> </tr>
+                        <tr> <td colspan="4"> В стоимость входит завтрак для 3х человек, пользование всеми услугами отеля, Wi-Fi, тапочки для моря, уборка номера 1 раз в 3 дня. </td> </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-6 box">
+                    <div id="room3title"> <h1> Кемпинг-дом </h1> (1 номер) <br> <br> </div>
+                    Номер вмещает до 6х человек и включает:
+                    <br> <br> <strong> Мобильный дом (3м х 8м) </strong>
+                    <br> Мини-кухня с микроволновой печью, холодильником, столом, плитой, электрочайником и посудой, туалетный столик с зеркалом, телевизор, туалет с насадкой для биде, электрический камин, тёплый пол, кондиционер, шкафы для одежды, сейф, халаты, белье, полотенца.
+                    <br> <br> Одна двуспальная кровать (1.4м x 2м) в одной спальне и один двуспальный диван (1.4м x 2м) в другой, большой диванный уголок (0.8м х 3м) и тахта (1.3м х 1.7м) в гостиной.
+                    <br> <br> <strong> Деревянная веранда (3м x 6.5м) </strong>
+                    <br> Большой деревянный обеденный стол, деревянная скамья с мягким матрасом, деревянные кресла с мягкими матрасами, телевизор, широкий гамак, два шезлонга с мягким матрасом, сушилка для белья.
+                    <br> <br> <strong> Душ / туалет </strong>
+                    <br> Круглосуточная горячая вода, стиральная машина, полотенца, фен, сменные наборы (мыло/шампунь/гель для душа).
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Room house -->
+
+    <!-- Services -->
+    <div id="services" class="page clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10  col-md-offset-1">
+                    <div class="build title-page">
+                        <h2 class="text-center">Услуги</h2>
+                        <div class="line-title bg-primary"></div>
+                    </div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+
+            <div class="row">
+                <div class="col-md-11" style="width:100%; margin-top: 20px;">
+                    <div class="thumbnail"><div class="thumb-img"><a href="img/photo/sea/1.jpg" data-gallery="sea" data-parent="" data-toggle="lightbox" data-title=""><img src="img/photo/sea/1.jpg"></a></div></div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+
+            <div class="row" style="margin-top: 20px">
+                <div class="col-xs-12 col-sm-4 col-md-6 box">
+                    <ul class="table-services">
+                        <li> <strong> Пляж </strong> <br> малолюдный. Открытое очень чистое море, берег - крупная галька. Выдаются тапочки для каменистого берега и купания в море. </li>
+                        <li> <strong> Детский батут </strong> <br> </li>
+                        <li> <strong> Бар </strong> <br> для еды, общения и отдыха.</li>
+                        <li> <strong> Библиотека </strong> <br> состоящая из собраний детективов, развлекательной и классической литературы, а также карты Севастополя с описанием главных достопримечательностей города.</li>
+                        <li> <strong> Ноутбук </strong> <br> в гриль-баре.</li>
+                        <li> <strong> Трансфер до отеля </strong> <br> с авто и жд вокзалов в Севастополе - бесплатно, из аэропорта в Симферополе - по договоренности.</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-6 box">
+                    <ul class="table-services">
+                        <li> <strong> Бассейн </strong> (3.5м х 5.5м) <br> с пресной водой, обрамленный деревянным пандусом с шезлонгами для загара и отдыха.</li>
+                        <li> <strong> Спортивный газон </strong> (10м х 10м) <br> с лежачими и сидячими шезлонгами и зонтами для загара и отдыха.</li>
+                        <li> <strong> Настольный теннис </strong> <br> </li>
+                        <li> <strong> Мангал-зона </strong> <br> с необходимым оборудованием и возможностью приобретения дров и угля.</li>
+                        <li> <strong> Магазин </strong> <br> где можно приобрести снеки, сладости, мороженное и напитки.</li>
+                        <li> <strong> Wi-Fi </strong> <br> на всей территории отеля.</li>
+                        <li> <strong> Парковка</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Services -->
+
+    <!-- Bar -->
+    <div id="bar" class="page clearfix">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-10  col-md-offset-1">
+                    <div class="build title-page">
+                        <h2 class="text-center">Бар</h2>
+                        <div class="line-title bg-primary"></div>
+                    </div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+
+            <div class="row" style="margin-top: 15px">
+                <div class="col-xs-12 col-sm-4 col-md-12 box">
+                    <strong>Бар «Панаехало!»</strong> имеет свой неповторимый стиль, вкус, и репутацию.
+                    Столики в баре, рассчитаные на 2-4 человек, легко поддаются перестановкам и перегруппировкам по желанию гостей. Часть столиков выносится на газон для проведения романтических ужинов «при свечах» на открытом воздухе.
+                    Ежегодно обновляется оформление и полностью меняется кухня, отражая объявленный на ближайший год тематический сезон.
+                    В 2015 году у наших отдыхающих будет возможность ощутить <strong>«привкус Франции»</strong> во всех предлагаемых блюдах.
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 20px">
+
+                <div class="col-xs-12 col-sm-4 col-md-6 box">
+                    <h1> Завтрак </h1> (входит в стоимость) <br> <br>
+                    <strong>Для разминки:</strong>
+                    <ul>
+                        <li>Омлет французский порционный с наполнителями и зеленью</li>
+                        <li>Киш (французский открытий пирог) с различными начинками</li>
+                        <li>Салат овощной</li>
+                        <li>Хлеб домашний и заводской на выбор</li>
+                        <li>Масло сливочное порционное</li>
+                        <li>Паштет порционный</li>
+                        <li>Сыр секторный или нарезка</li>
+                        <li>Йогурт</li>
+                        <li>Круассаны</li>
+                    </ul>
+                    <strong>На горячее:</strong>
+                    <ul>
+                        <li>Блинчики с грибным / яблочным / банановым припеком</li>
+                        <li>Каша овсяная / гречневая / рисовая на молоке</li>
+                        <li>Яичница с овощами / грибами / курицей и зеленью</li>
+                    </ul>
+                    <strong>В дополнение:</strong>
+                    <ul>
+                        <li>Конфеты / печенье / вафли / шоколад</li>
+                        <li>Мед / варенье / сметана / сливки</li>
+                        <li>Чай / кофе / сок</li>
+                    </ul>
+                    <br>
+                    <h1> Ужин </h1> (500 рублей) <br> <br>
+                    <strong>На горячее:</strong>
+                    <ul>
+                        <li>Свинина / говядина / курица в соусе «Болоньез»</li>
+                        <li>Свиные медальоны с карамелизованными луком и яблоками</li>
+                        <li>Мясо по-французски с сыром</li>
+                        <li>Свиная отбивная с травами прованским и сливками</li>
+                        <li>Бургундский гуляш из говядины в красном вине</li>
+                        <li>Курица Маренго с грибами в белом вине</li>
+                        <li>Говядина,тушеная в красном вине с апельсинами</li>
+                        <li>Соте из курицы с томатами и маслинами</li>
+                        <li>Рыба на мангале с французским белым соусом</li>
+                        <li>Мидии / креветки / кальмары тушеные в белом винном соусе</li>
+                    </ul>
+                    <strong>На гарнир:</strong>
+                    <ul>
+                        <li>Тартифлетт (запеканка из картофеля с беконом, сыром и сливками)</li>
+                        <li>Картофель «Анна» (запеченый с перцем и маслом)</li>
+                        <li>Картофель жаренный с луком, чесноком и тимьяном</li>
+                        <li>Молодой картофель в пряном соусе/ соусе песто</li>
+                        <li>Картофель жаренный  с горчичным соусом</li>
+                        <li>Картофельные гратены</li>
+                        <li>Французский овощной торт (овощи, запеченные в духовке)</li>
+                        <li>Рисовый тарт с овощами</li>
+                        <li>Овощное рагу с прованскими травами, эстрагоном и базиликом</li>
+                        <li>Овощи, запеченые на мангале с острым соусом</li>
+                        <li>Рис отварной с белым соусом</li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-6 box" style="margin-top: 5px">
+
+                    <div class="thumbnail"><div class="thumb-img"><a href="img/photo/bar/1.jpg" data-gallery="bar" data-parent="" data-toggle="lightbox" data-title="Бар (1 / 4)"><img src="img/photo/bar/1.jpg"></a></div></div>
+                    <a href="img/photo/bar/2.jpg" data-gallery="bar" data-parent="" data-toggle="lightbox" data-title="Бар (2 / 4)" style="display:none"><img src="img/photo/bar/2.jpg"></a>
+                    <a href="img/photo/bar/3.jpg" data-gallery="bar" data-parent="" data-toggle="lightbox" data-title="Бар (3 / 4)" style="display:none"><img src="img/photo/bar/3.jpg"></a>
+                    <a href="img/photo/bar/4.jpg" data-gallery="bar" data-parent="" data-toggle="lightbox" data-title="Бар (4 / 4)" style="display:none"><img src="img/photo/bar/4.jpg"></a>
+
+                    <strong>Салаты:</strong>
+                    <ul>
+                        <li>Салат «Любовница» (курица, лук, изюм, морковь, сыр, кунжут, апельсин)</li>
+                        <li>Салат «Париж»  (фасоль зеленая, тунец, помидор, яйца, сыр)</li>
+                        <li>Салат с красной капустой, рисом и изюмом</li>
+                        <li>Салат Картофельный с винным уксусом и мятой</li>
+                        <li>Салат из латука</li>
+                        <li>Зеленый салат под коньячным соусом</li>
+                        <li>Салат из фасоли с апельсином и кунжутом</li>
+                        <li>Салат «А-ля франсе» (курица, курага, чернослив, огурцы маринованные)</li>
+                        <li>Салат из печеных перцев и бананов</li>
+                        <li>Салат из грибов с сырной заправкой и зеленью</li>
+                        <li>Салат из курицы, баклажанов и помидоров</li>
+                        <li>Классический «Нисуаз» (помидоры, перец, тунец, редис, яйца, маслины)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Bar -->
+
+    <!-- Extra -->
+    <div id="extra" class="page clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10  col-md-offset-1">
+                    <div class="build title-page">
+                        <h2 class="text-center">Новости и акции</h2>
+                        <div class="line-title bg-primary"></div>
+                    </div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+
+            <div class="row" style="margin-top: 20px">
+                <div class="col-xs-12 col-sm-4 col-md-4 box">
+                    <img src="img/tower.png">
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-8 box">
+                    С 1 мая по 30 октября 2015 года наш отель  объявляет «Французский сезон».  На отдыхе гостей будут сопровождать французская музыка, завтраки с элементами французской кухни, ужины по классическим французским рецептам  в романтической обстановке при свечах.<br>
+                        <br> <strong> Акции: </strong> <br> <br> Гостям, приезжающим второй и более раз скидка на проживание 5%. <br>
+                    <br> Гостям,  приезжающим на срок более 14 дней – бесплатная ознакомительная тематическая экскурсия по Севастополю на выбор:<br>
+                    <ul>
+                        <br><li> <strong> Севастополь исторический </strong> - посещение основных исторических достопримечательностей Севастополя (Диорама, Панорама, Херсонес Таврический, Графская пристань). Во время экскурсии гости могут задержаться в любом из объектов по выбору. Машина в распоряжении гостей на 4 часа. </li>
+                        <br><li> <strong> Севастополь романтический </strong> - дневная прогулка по набережной Балаклавы, либо вечерняя прогулка по центральной набережной Севастополя - Приморскому бульвару в течение 3х часов + бутылка Севастопольского шампанского в подарок. </li>
+                        <br><li> <strong> Севастополь торговый </strong> - посещение главных торговых центров и большого вещевого рынка. Машина в распоряжении гостей на 4 часа. </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Extra -->
+
+    <!--Contact-->
+    <div id="contact" class="page page-bgcolor" style="padding-bottom: 0;">
+        <div class="container">
+
             <div class="row">
                 <div class="col-md-10  col-md-offset-1">
                     <div class="build title-page">
@@ -194,51 +479,33 @@
                     </div>
                 </div><!-- end col -->
             </div><!-- end row -->
+
             <div class="row">
-                <div class="col-md-4 ">
-                    <div class="build contact clearfix text-center">
-                        <span class="fa fa-map-marker"></span>
-                        <p>Merapi Street no.43 <br />Yogyakarta. Indonesia<p>
-                    </div>
-                </div><!-- end col -->
-                <div class="col-md-4 ">
+                <div class="col-md-3"></div>
+                <div class="col-md-3" style="float: left;">
                     <div class="build contact clearfix text-center">
                         <span class="fa fa-phone"></span>
-                        <p>tel.<a href="tel:+824 2344 5602">+824 2344 5602</a></p>
-                        <p>mob.<a href="tel:+824 256 9877">+824 256 9877</a></p>
+                        <strong class="cont">+7 (978) 769-31-42</strong>
                     </div>
                 </div>
-                <div class="col-md-4 ">
+                <div class="col-md-4" style="float: left;">
                     <div class="build contact clearfix text-center">
                         <span class="fa fa-envelope"></span>
-                        <p>email.joker@youmail.co.id</p>
+                        <strong class="cont">panaehalomotel@gmail.com</strong>
                     </div>
                 </div>
             </div><!-- end row -->
+
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-12" style="margin-bottom: 15px;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5044.1281106636225!2d33.405530999236284!3d44.56466889241789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDTCsDMzJzUzLjUiTiAzM8KwMjQnMTguNiJF!5e1!3m2!1sru!2s!4v1426371659856" width="100%" height="415" frameborder="0" style="padding: 4px;border: 1px solid #ddd;"></iframe>
+                </div>
+            </div>
+
         </div><!-- end container -->
     </div>
     <!--Contact-->
-
-    <!-- Footer -->
-    <footer class="bg-black">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 ">
-                    <div class="cp-right">
-                        <p>&copy; 2014 <a href="http://omahpsd.com" class="color-primary linear">OmahPSD</a>. All Rights Reserved. </p>
-                    </div><!-- end build -->
-                </div><!-- end col -->
-                <div class="col-md-6 text-right">
-                    <ul class="list-inline">
-                        <li><a href="#" class="socIcon color-primary linear"><i class="fa fa-facebook fa-2x"></i></a></li>
-                        <li><a href="#" class="socIcon color-primary linear"><i class="fa fa-twitter fa-2x"></i></a></li>
-                        <li><a href="#" class="socIcon color-primary linear"><i class="fa fa-dribbble fa-2x"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- /Footer -->
 
     <!-- JavaScript -->
     <script src="js/jquery-1.10.2.js"></script>

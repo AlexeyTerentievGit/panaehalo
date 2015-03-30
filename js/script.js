@@ -53,34 +53,16 @@
 })();
 
 $(window).load(function () {
-
-    $('#flex-head').flexslider({animation: "slide", slideshow: true});
-
     navScroll();
 
-    /*
-     $('#filterOptions a').click(function (e){
-     e.preventDefault();
-
-     // set active class
-     $('#filterOptions a').removeClass('cur');
-     $(this).addClass('cur');
-
-     // get group name from clicked item
-     var groupName = $(this).attr('data-group');
-
-     // reshuffle grid
-     $grid.shuffle('shuffle', groupName );
-     });
-     */
-
-    /* initialize shuffle plugin */
-    /*
-     var $grid = $('#grid'),
-     $sizer = $grid.find('.shuffle__sizer');
-
-     $grid.shuffle({ itemSelector: '.box', sizer: $sizer });
-     */
+    if ($('.navbar-toggle').css('display') != 'none') {
+        $('#room1title').appendTo('#room1mtitle');
+        $('#room1title').css('text-align', 'center');
+        $('#room2title').appendTo('#room2mtitle');
+        $('#room2title').css('text-align', 'center');
+        $('#room3title').appendTo('#room3mtitle');
+        $('#room3title').css('text-align', 'center');
+    }
 });
 
 $(window).resize(function () {
@@ -121,18 +103,6 @@ function lightboxPhoto() {
 }
 
 function navScroll() {
-    /*
-     var top = $(window).scrollTop();
-
-     if (top > 3) {
-     $('.main-nav').fadeIn();
-
-
-     }else {
-
-     $('.main-nav').fadeOut();
-     }
-     */
 }
 
 function winHeight() {
@@ -165,7 +135,7 @@ function barScroll() {
     }, 300);
 }
 
-//==================================== height header============================//
+//==================================== slider ============================//
 function startSlider() {
 
     var mainDiv = $(".header");
@@ -178,8 +148,8 @@ function startSlider() {
     }
 
     function showNewBack() {
-        (imageNumber == 5) ? imageNumber = 1 : imageNumber++;
-        mainDiv.css("background", "url('img/photo/main/main" + imageNumber + ".jpg') no-repeat center fixed");
+        (imageNumber == 7) ? imageNumber = 1 : imageNumber++;
+        mainDiv.css("background", "url('img/photo/main/" + imageNumber + ".jpg') no-repeat center fixed");
         mainDiv.css("background-size", "cover");
         mainDiv.animate({opacity: 1}, 2000);
     }
